@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { TypewriterEffectSmooth } from "@/components/ui/TypeWriterEffect";
 import { TextGenerateEffect } from "@/components/ui/GenerateEffect";
 import Link from "next/link";
+import { Github, Instagram, Linkedin, LinkedinIcon } from "lucide-react";
 
 export default function Home() {
   const words = [
@@ -43,7 +44,7 @@ export default function Home() {
         <Separator className=" my-10" />
       </div>
       <div className="relative flex flex-col items-center place-items-center ">
-        <h2 className="text-center font-semibold text-ml text-muted-foreground">
+        <h2 className="text-center font-thin text-ml text-muted-foreground">
           Hi, I am <br />
         </h2>
         <h1 className="text-center text-white font-sans text-8xl">
@@ -65,10 +66,25 @@ export default function Home() {
       <div className="flex flex-col h-full w-full justify-end items-center ">
         <Separator />
         <h1 className="pt-5 font-mono">You can also find me here</h1>
-        <div className="flex w-10 items-center py-3 mx-10">
-          <Image src="github.svg" alt="github" width={80} height={80} />
-          <Image src="linkedin.svg" alt="linkedin" width={25} height={25} />
-          <Image src="instagram.svg" alt="instagram" width={60} height={60} />
+        <div className="flex w-20 h-10 items-center my-6 space-x-4 justify-center">
+          <Link
+            href="https://github.com/fres-sudo/"
+            className={buttonVariants({ variant: "outline", size: "icon" })}>
+            <Github className="m-2" />
+          </Link>
+
+          <Separator orientation="vertical" />
+          <Link
+            href="https://linkedin.com/in/francesco-calicchio/"
+            className={buttonVariants({ variant: "outline", size: "icon" })}>
+            <Linkedin className="m-2" />
+          </Link>
+          <Separator orientation="vertical" />
+          <Link
+            href="https://instagram.com/aka_fres/"
+            className={buttonVariants({ variant: "outline", size: "icon" })}>
+            <Instagram className="m-2" />
+          </Link>
         </div>
       </div>
     </main>
