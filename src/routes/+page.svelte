@@ -31,15 +31,15 @@
         <h2 class="text-center font-thin text-ml text-muted-foreground">
           Hi, I am <br />
         </h2>
-        <h1 class="text-center text-white font-sans text-8xl">
-            Francesco Calicchio
+        <h1 class="text-center text-white font-serif font-bold text-7xl">
+            <span class="text-green-500">Francesco</span> Calicchio
         </h1>
         <div class="flex flex-col w-[25rem]">
-            <p class="font-thin text-center text-sm sm:text-ml">
+            <p class="font-thin text-center text-sm sm:text-ml py-6">
               Welcome to my space, here you can find more about me, my interest, and you can broswe through my mind.
             </p>
-            <p class="font-thin text-center text-sm sm:text-ml">
-            You can also call me fres.      
+            <p class="font-mono text-center text-sm sm:text-ml">
+            You can also call me <span class="hover:text-green-500">fres</span>.      
       </p>
         </div>
       </div>

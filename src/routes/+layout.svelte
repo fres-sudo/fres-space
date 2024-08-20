@@ -1,8 +1,11 @@
 <script>
   import "../app.css";
-  import { ModeWatcher } from "mode-watcher";
+  import { ModeWatcher, setMode } from "mode-watcher";
 
+  setMode("dark")
 </script>
 
-<ModeWatcher defaultMode={"dark"}/>
+<ModeWatcher defaultMode={"dark"}/>,
+
 <slot/>
+
