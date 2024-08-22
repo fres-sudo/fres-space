@@ -1,20 +1,28 @@
 <script lang="ts">
   import { CalendarRange } from "lucide-svelte";
   import Button from "./ui/button/button.svelte";
+  import { Separator } from "./ui/separator";
 </script>
 
-<div class="flex flex-col h-full min-w-full items-start ml-10 my-10">
-  <div class="flex flex-row items-center justify-between w-full">
-    <h1 class="font-mono text-2xl m-5">
-      <span class="text-green-500">Exp</span>erience
+<div class="flex flex-col h-full items-start mb-5">
+  <div class="flex flex-row items-center justify-between">
+    <h1 class="font-mono text-2xl mb-3">
+      <span class="text-green-500">Edu</span>cation
     </h1>
-    <Button
-      variant="outline"
-      disabled
-      class="bg-muted-foreground hover:bg-muted"
-    >
-      <CalendarRange class="mr-2 w-5 h-5" /> Oct 2022 - Present
-    </Button>
   </div>
-  <p class="ml-10">• University of Camerino</p>
+  <h2 class="mx-8 font-semibold mb-2">
+    Bachelor of <span class="text-green-500">Computer Science</span>
+    <span class="inline-block font-thin text-muted-foreground">
+      📅 Oct 2022 - Jul 2025
+    </span>
+  </h2>
+  <ul class="list-disc list-inside mx-10">
+    <li class="text-muted-foreground">
+      <span class="text-white">GPA: </span>3.5/4.0
+    </li>
+    <li class="text-muted-foreground">
+      <span class="text-white">Main Course: </span>Algorithm and Data Structure,
+      OOP, Computer Architecture, Linear Algebra, Probability and Statistics.
+    </li>
+  </ul>
 </div>

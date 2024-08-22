@@ -2,9 +2,6 @@
   import { Separator } from "$lib/components/ui/separator";
   import Button from "$lib/components/ui/button/button.svelte";
   import {
-    Github,
-    Linkedin,
-    Instagram,
     Binary,
     MapPin,
     FileText,
@@ -14,69 +11,57 @@
   } from "lucide-svelte";
 </script>
 
-<div class="flex flex-col sm:flex-row w-full items-start justify-start">
+<div class="flex flex-col sm:flex-row w-full items-center justify-start pb-5">
   <img
-    class="mx-10"
+    class="mx-5 md:mx-10 w-52 sm:w-52 md:w-64 lg:w-72"
     src={"/shape-cv-image-2.png"}
-    alt="image"
+    alt="profile"
     width={300}
     height={300}
   />
-  <div class="flex flex-col w-full my-10">
-    <div class="flex flex-row justify-between">
-      <h1 class="text-start text-white font-bold text-3xl sm:text-4xl mb-5">
+  <div class="flex flex-col">
+    <div class="flex flex-col max-w-6xl sm:flex-row mb-5 sm:mb-0">
+      <h1
+        class="text-center text-white font-bold text-3xl sm:text-4xl mb-5 mt-5 sm:mt-0"
+      >
         <span class="text-green-500">Francesco</span> Calicchio
       </h1>
       <Button
-        class="bg-green-500 hover:bg-green-600"
+        class="bg-green-500 hover:bg-green-600 px-10 sm:px-4 sm:mx-10"
         target="_blank"
-        href="/CV_FRANCESCO_CALICCHIO.pdf"
-        ><FileText class="mr-2 h-4 w-4" /> Seee CV</Button
+        href="/CV_FRANCESCO_CALICCHIO.pdf">👀 See CV</Button
       >
     </div>
-
-    <Separator />
-    <div class="flex flex-row w-full h-full items-start justify-around">
+    <div class="flex flex-col md:flex-row">
       <h2
-        class="flex items-center text-start text-muted-foreground font-thin text-sm mt-5"
+        class="flex flex-col w-full h-full items-start gap-y-2 text-start text-muted-foreground font-thin text-sm mt-2"
       >
-        <Binary class="mr-2 w-5 h-5" />
-        Software Engineer
+        <p class="flex">
+          👨🏻‍💻 Software Engineer @
+          <a
+            class="underline decoration-neutral-400 underline-offset-2"
+            target="_blank"
+            href="https://www.odoo.com"
+          >
+            Odoo</a
+          >
+        </p>
+        <p class="flex">📍 Benevento, Italy</p>
+        <p class="flex">👤 21 years old</p>
       </h2>
-      <Separator orientation="vertical" class="m-5 h-6" />
       <h2
-        class="flex items-center text-start text-muted-foreground font-thin text-sm mt-5"
+        class="flex flex-col w-full h-full items-start gap-y-2 text-start text-muted-foreground font-thin text-sm md:ml-5 mt-2"
       >
-        <MapPin class="mr-2 w-5 h-5" />
-        Benevento, Italy
-      </h2>
-      <Separator orientation="vertical" class="m-5 h-6" />
-      <h2
-        class="flex items-center text-start text-muted-foreground font-thin text-sm mt-5"
-      >
-        <PersonStanding class="mr-2 w-5 h-5" />
-        21 years old
-      </h2>
-    </div>
-    <Separator />
-    <h2 class="font-mono text-sm my-5">
-      <span class="text-green-500">Contact</span> me:
-    </h2>
-    <div
-      class="flex flex-col sm:flex-row w-full h-8 items-center justify-around"
-    >
-      <h2
-        class="flex items-center text-start text-muted-foreground font-thin text-sm mb-2"
-      >
-        <Mail class="mr-2 w-5 h-5" />
-        francescocalicchio@hotmail.com
-      </h2>
-      <Separator orientation="vertical" />
-      <h2
-        class="flex items-center text-start text-muted-foreground font-thin text-sm"
-      >
-        <Phone class="mr-2 w-5 h-5" />
-        +39 377 455 2296
+        <p
+          class="flex items-center text-start text-muted-foreground font-thin text-sm"
+        >
+          💌 francescocalicchio@hotmail.com
+        </p>
+        <p
+          class="flex items-center text-start text-muted-foreground font-thin text-sm"
+        >
+          ☎️ +39 377 455 2296
+        </p>
       </h2>
     </div>
   </div>
