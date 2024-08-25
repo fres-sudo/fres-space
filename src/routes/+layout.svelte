@@ -7,7 +7,7 @@
   setMode("dark");
 </script>
 
-<ModeWatcher defaultMode={"dark"} />,
+<ModeWatcher defaultMode={"dark"} />
 
 <main
   class="p-6 sm:p-10 flex min-h-screen flex-col items-center justify-between"

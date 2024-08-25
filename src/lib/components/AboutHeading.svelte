@@ -55,6 +55,11 @@
         <p
           class="flex items-center text-start text-muted-foreground font-thin text-sm"
         >
+          🎓 CS @ Unicam
+        </p>
+        <p
+          class="flex items-center text-start text-muted-foreground font-thin text-sm"
+        >
           💌 francescocalicchio@hotmail.com
         </p>
         <p

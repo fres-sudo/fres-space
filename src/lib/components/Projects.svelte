@@ -8,7 +8,11 @@
       <span class="text-green-500">Pro</span>ject
     </h1>
   </div>
-  <h2 class="mx-4 font-semibold mb-2">- Pomo</h2>
+  <a
+    href="https://github.com/fres-sudo/pomo"
+    class="mx-4 font-semibold mb-2 decoration-neutral-400 underline-offset-2"
+    >- <span class="underline">Pomo</span> 🍅</a
+  >
   <ul class="list-disc list-inside mx-10">
     <li class="text-muted-foreground">
       Published a mobile app on <span class="text-white">app stores</span>
@@ -37,13 +41,13 @@
     <Badge class="bg-muted text-muted-foreground">PostgreSQL</Badge>
   </ul>
 
-  <h2 class="mx-4 font-semibold my-2">
-    - Mobile Developer Freelance <span
-      class="inline-block font-thin text-muted-foreground"
-    >
-      📅 Sept 2023 - Now
-    </span>
-  </h2>
+  <a
+    href="https://formwizard.fres.space"
+    target="_blank"
+    class="mx-4 font-semibold my-2 decoration-neutral-400 underline-offset-2"
+  >
+    - <span class="underline">Form Wizard</span>🧙
+  </a>
   <ul class="list-disc list-inside mx-10">
     <li class="text-muted-foreground">
       Led the complete development cycle of a <span>full stack web app </span> using
